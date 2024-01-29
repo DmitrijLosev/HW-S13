@@ -10,6 +10,7 @@ function Clock() {
     const [show, setShow] = useState<boolean>(false)
 
     const start = () => {
+        setDate(new Date())
         const id = setInterval(() => {
             setDate(new Date())
         }, 1000)
